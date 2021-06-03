@@ -85,12 +85,43 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: border-radius 2s, filter 2s, transform 2s;
+}
+
+.ex-9-img:hover{
+    transform: scale(1.5);
+    filter: sepia(1);
+    border-radius: 15px;
 }
 
 
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation 2s linear infinite;
 }
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
